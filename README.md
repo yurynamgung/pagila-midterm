@@ -5,9 +5,15 @@
 Sunday, 21 March at midnight.
 There are no extensions for this assignment.
 
+You are not timed on the midterm, and may stop and restart it as many times as you'd like.
+If you choose to do so, please be mindful of the collaboration policy.
+
 **Collaboration Policy:**
 
 You may not collaborate with any human on this assignment.
+In particular, you cannot:
+1. work with another student,
+1. or post questions on github.
 
 You are allowed to reference any non-human resource created before the midterm was assigned.
 In particular, you are encouraged to reference:
@@ -30,7 +36,8 @@ The instructions are essentially the same as for the pagila homeworks:
    (I will grade your answers manually.)
 
 1. Commit your changes and push them to github.
-   Submit a link to your repo to sakai, along with the statment:
+
+1. Submit a link to your repo to sakai, along with the statement:
    ```
    I have not collaborated with anyone on this midterm.
    ```
