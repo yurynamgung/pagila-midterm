@@ -1,8 +1,6 @@
 /*
- * Write a SQL query SELECT query that:
- * List the first and last names of all actors who have appeared in movies in the "Children" category,
- * but that have never appeared in movies in the "Horror" category.
+ * List the titles of all films in the 'Children' category that have a rating of 'R' or 'NC-17'.
  *
- * HINT:
- * This requires joining from the category table down to the actor table.
+ * NOTE:
+ * Your results should not contain any duplicate titles.
  */
