@@ -15,3 +15,23 @@
  * NOTE:
  * You do not have to include movies with similarity score 0 in your results (but you may if you like).
  */
+with ac_customers as (
+    select distinct customer.customer_id 
+    from film
+    join inventory on (film.film_id = inventory.film_id)
+    join rental on (inventory.inventory_id = rental.inventory_id)
+    join customer on (rental.customer_id = customer.customer_id)
+    where film.title = 'AMERICAN CIRCUS'
+), similar_movies as ( -- keep # of customers in list for each movie
+    select distinct film.title, ac_customers.customer_id
+    from film
+    join inventory on (film.film_id = inventory.film_id)
+    join rental on (inventory.inventory_id = rental.inventory_id)
+    join ac_customers on (rental.customer_id = ac_customers.customer_id)
+)
+select distinct title, 
+    count(customer_id) as similarity_score
+from similar_movies
+group by title
+order by similarity_score desc;
+
